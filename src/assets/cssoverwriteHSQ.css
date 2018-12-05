@@ -1,0 +1,123 @@
+/* 为了应对C3改变字体设置 */
+html {
+  -webkit-text-size-adjust: 100% !important;
+}
+body {
+  margin: 0;
+  -webkit-user-select: none;
+}
+body {
+  -webkit-text-size-adjust: 100%;
+}
+body * {
+  -webkit-user-select: none;
+}
+input,
+button {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+a,
+input,
+button {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+/* css reset */
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: "PingFangSC", "Microsoft YaHei", "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB",  "WenQuanYi Micro Hei", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+dl,
+dd {
+  margin: 0;
+}   
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+img {
+  border: none;  
+  vertical-align: top;
+}
+strong {
+  font-weight: normal;
+}
+em,
+cite {
+  font-style: normal;
+}
+mark {
+  background: none;
+}
+
+table  {
+  border-collapse:collapse;
+}
+th,
+td {
+  padding:0;
+}
+th {
+  font-weight:normal;
+}
+input {
+  outline: none;
+  padding: 0;
+  border: 0;
+}
+select {
+  padding: 0; 
+}
+textarea {
+  padding: 0; 
+  margin: 0;
+  overflow: auto;
+  resize: none;
+}
+button {
+  padding: 0;
+}
+/* 根据CSS世界的观点，替换元素需要使用box-sizing来解决自适应 */
+input, textarea, img, video, object {
+  box-sizing: border-box;
+}
+/*清浮动*/
+.clearFix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  clear: both;
+}
+.clearFix {
+  zoom : 1;
+}
+
+/* 覆盖组件样式部分 */
+.index-page .swiper-wrap .swiper-pagination .swiper-pagination-bullet {
+  width: 0.21333rem;
+  height: 0.21333rem;
+  background-color: #fff;
+}
+.index-page .swiper-wrap .swiper-pagination .swiper-pagination-bullet-active {
+  background: #25DEDE;
+}
